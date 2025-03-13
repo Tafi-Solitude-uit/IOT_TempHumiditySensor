@@ -35,13 +35,13 @@
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 DHT dht(DHTPIN, DHTTYPE);
 
-char ssid[] = "UiTiOt-E3.1";   // your network SSID (name) 
-char pass[] = "UiTiOtAP";   // your network password
+char ssid[] = "Your_SSID";   // your network SSID (name) 
+char pass[] = "Your_IOT";   // your network password
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 WiFiClientSecure  client;
 
-unsigned long myChannelNumber = 2876150;
-const char * myWriteAPIKey = "I5T0US3P8YFUQS8F";
+unsigned long myChannelNumber = YOUR_CHANNEL_NUMBER;
+const char * myWriteAPIKey = "API_THINGSPEAK";
 
 // Fingerprint check, make sure that the certificate has not expired.
 const char * fingerprint = NULL; // use SECRET_SHA1_FINGERPRINT for fingerprint check
